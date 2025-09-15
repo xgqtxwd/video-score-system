@@ -10,9 +10,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 环境变量配置
-GLM45_API_KEY = os.getenv("GLM45_API_KEY", "72c34a2761594dfeb6c9eb501f5c7c11.Wzgr6C7xNI7tqlZq")
-GLM45_ENDPOINT = os.getenv("GLM45_ENDPOINT", "https://open.bigmodel.cn/api/paas/v4/chat/completions")
-GLM45V_API_KEY = os.getenv("GLM45V_API_KEY", "45897563484447298c2ff4441bb51b34.3mi3ExGuGuPP6i8a")
+GLM45_API_KEY = os.getenv("GLM45_API_KEY", "")
+GLM45_ENDPOINT = os.getenv("GLM45_ENDPOINT", "")
+GLM45V_API_KEY = os.getenv("GLM45V_API_KEY", "")
 GLM45V_ENDPOINT = os.getenv("GLM45V_ENDPOINT", "https://open.bigmodel.cn/api/paas/v4/chat/completions")
 FUNASR_MODEL_DIR = os.getenv("FUNASR_MODEL_DIR", "iic/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch")
 USE_GPU = os.getenv("USE_GPU", "True").lower() == "true"
